@@ -1,5 +1,7 @@
-# Project 1
-set(ep_1_src "1.cc" )
-set(ep_1_headers  "1.hh" )
+set(targets 1 2 3)
 
-add_executable(ep1 ${ep_1_src} ${ep_1_src})
+foreach (target ${targets})
+    set(ep_src "${target}.cc" )
+    set(ep_headers  "${target}.hh" )
+    add_executable("ep${target}" ${ep_src} ${ep_src})
+endforeach(target) 

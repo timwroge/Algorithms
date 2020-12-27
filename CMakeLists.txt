@@ -29,7 +29,7 @@ if (CMAKE_GENERATOR STREQUAL "Unix Makefiles")
     )
 endif ()
 # add some compiler flags
-set (CMAKE_CXX_FLAGS " -std=c++2a -fexceptions -Werror -Wall")
+set (CMAKE_CXX_FLAGS " -std=c++2a -static-libstdc++ -fexceptions -Werror -Wall")
 # makes teh binaries go to release within the cmake binary directory
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/release)
 #include(${CMAKE_SOURCE_DIR}/include/)
