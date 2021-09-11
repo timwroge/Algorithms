@@ -1,4 +1,4 @@
-set(targets 1 2 3)
+set(targets 1 2 3 4)
 
 foreach (target ${targets})
     set(ep_src "${target}.cc" )
